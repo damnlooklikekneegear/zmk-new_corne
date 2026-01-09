@@ -309,7 +309,7 @@
             bindings = <
 &kp ESC  &kp F1   &kp F2   &kp F3         &kp F4  &kp F5                         &kp UP                &kp KP_SLASH     &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_MINUS  &kp BSPC
 &trans   &kp F6   &kp F7   &kp F8         &kp F9  &kp F10              &kp LEFT  &kp ENTER  &kp RIGHT  &kp KP_ASTERISK  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_PLUS   &kp KP_ENTER
-&trans   &kp F11  &kp F12  &kp C_AL_CALC  &none   &kp SEMI   &trans              &kp DOWN              &kp COLON        &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp EQUAL     &trans
+&trans   &kp F11  &kp F12  &kp C_AL_CALC  &none   &kp SEMI   &tog 0              &kp DOWN              &kp COLON        &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp EQUAL     &trans
                            &trans         &trans  &kp SPACE                                            &kp SPACE        &kp KP_N0  &kp KP_DOT
             >;
         };
@@ -320,7 +320,7 @@
 &kp ESC     &kp N1  &kp N2    &kp N3    &kp N4    &kp N5                           &kp UP                &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp DEL
 &caps_word  &trans  &kp LT    &kp LPAR  &kp RPAR  &kp GT                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp PLUS   &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp GRAVE
 &kp LSHFT   &trans  &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC  &kp SPACE              &kp DOWN              &kp TILDE  &kp UNDER  &kp NUHS   &kp NUBS  &kp PIPE  &kp BACKSLASH
-                              &mo 0     &mo 0     &kp BSPC                                               &kp SPACE  &mo 0      &tog 0
+                              &trans    &trans    &kp BSPC                                               &kp SPACE  &trans     &trans
             >;
         };
 
@@ -330,7 +330,7 @@
 &kp LA(TAB)  &to 0         &to 0         &to 0         &to 0         &to 0                                &kp UP                &rgb_ug RGB_ON   &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &kp LC(LA(DEL))
 &kp DEL      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4               &kp LEFT  &kp ENTER  &kp RIGHT  &rgb_ug RGB_OFF  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &rgb_ug RGB_TOG
 &mo 0        &bt BT_CLR    &bt BT_CLR    &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &kp SPACE              &kp DOWN              &bl BL_ON        &bl BL_OFF       &bl BL_INC       &bl BL_DEC       &bl BL_CYCLE     &bl BL_TOG
-                                         &trans        &sys_reset    &bootloader                                                &bootloader      &sys_reset       &studio_unlock
+                                         &trans        &trans        &bootloader                                                &bootloader      &trans           &trans
             >;
         };
 

@@ -9,6 +9,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -328,16 +329,16 @@
                                     &trans    &trans    &trans                                                               &kp SPACE  &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         adjust_layer {
             display-name = "Adjust";
             bindings = <
-&kp LA(TAB)  &to 0         &to 0         &to 0         &to 0         &to 0                                &kp UP                &rgb_ug RGB_ON   &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &kp LC(LA(DEL))
-&kp DEL      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4               &kp LEFT  &kp ENTER  &kp RIGHT  &rgb_ug RGB_OFF  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &rgb_ug RGB_TOG
-&mo 0        &bt BT_CLR    &bt BT_CLR    &out OUT_USB  &out OUT_BLE  &out OUT_TOG     &trans              &kp DOWN              &bl BL_ON        &bl BL_OFF       &bl BL_INC       &bl BL_DEC       &bl BL_CYCLE     &bl BL_TOG
-                                         &trans        &trans        &kp PRINTSCREEN                                            &bootloader      &trans           &trans
+&kp LA(TAB)  &to 0         &to 0         &to 0             &to 0              &to 0                                &kp UP                &rgb_ug RGB_ON   &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &kp LC(LA(DEL))
+&kp DEL      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3       &bt BT_SEL 4               &kp LEFT  &kp ENTER  &kp RIGHT  &rgb_ug RGB_OFF  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &rgb_ug RGB_TOG
+&mo 0        &bt BT_CLR    &bt BT_CLR    &out OUT_USB      &out OUT_BLE       &out OUT_TOG     &trans              &kp DOWN              &bl BL_ON        &bl BL_OFF       &bl BL_INC       &bl BL_DEC       &bl BL_CYCLE     &bl BL_TOG
+                                         &ext_power EP_ON  &ext_power EP_OFF  &kp PRINTSCREEN                                            &bootloader      &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;

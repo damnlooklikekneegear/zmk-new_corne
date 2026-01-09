@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY (base):
-  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -27,22 +27,22 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
-  - .
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
   - V
   - B
-  - {t: Lower, h: toggle}
+  - STOP
   - $$mdi:arrow-down-bold$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - Lower
   - $$mdi:apple-keyboard-option$$
   - Raise
   - $$mdi:keyboard-space$$
@@ -63,7 +63,7 @@ layers:
   - KP 9
   - KP MINUS
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab$$
   - F6
   - F7
   - F8
@@ -91,11 +91,11 @@ layers:
   - KP 2
   - KP 3
   - {t: '=', s: +}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
   - KP DOT
   Raise:
@@ -105,22 +105,22 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - $$mdi:arrow-up-bold$$
+  - $$mdi:pan-up$$
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:alpha-w-box$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
+  - {t: ;, s: ':'}
   - <
   - (
   - )
   - '>'
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:arrow-right-bold$$
+  - $$mdi:pan-left$$
+  - '&mkp MB3'
+  - $$mdi:pan-right$$
   - +
   - {t: '-', s: _}
   - {t: '=', s: +}
@@ -128,25 +128,25 @@ layers:
   - {t: ']', s: '}'}
   - {t: '`', s: '~'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '''', s: '"'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - '{'
   - '}'
   - $$mdi:keyboard-space$$
-  - $$mdi:arrow-down-bold$$
+  - $$mdi:pan-down$$
   - '~'
   - _
   - '#'
   - NUBS
   - '|'
   - {t: \, s: '|'}
-  - QWERTY (base)
-  - {t: QWERTY (base), type: held}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
-  - QWERTY (base)
-  - {t: QWERTY (base), h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   Adjust:
   - Alt+$$mdi:keyboard-tab$$
   - {t: QWERTY (base), h: toggle}
@@ -191,11 +191,11 @@ layers:
   - '&bl BL_CYCLE'
   - '&bl BL_TOG'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - PRINTSCREEN
   - $$mdi:progress-download$$
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '&studio_unlock', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
 combos:
 - p: [1, 2]
   k: $$mdi:keyboard-esc$$

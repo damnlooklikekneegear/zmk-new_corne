@@ -307,10 +307,10 @@
         lower_layer {
             display-name = "Lower";
             bindings = <
-&kp ESC  &kp F1   &kp F2   &kp F3         &kp F4  &kp F5                                           &kp UP                &kp KP_SLASH     &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_MINUS  &kp BSPC
-&trans   &kp F6   &kp F7   &kp F8         &kp F9  &kp F10                                &kp LEFT  &kp ENTER  &kp RIGHT  &kp KP_ASTERISK  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_PLUS   &kp KP_ENTER
-&trans   &kp F11  &kp F12  &kp C_AL_CALC  &none   &kp SEMI   &mup LC(SPACE) LC(LS(M))              &kp DOWN              &kp COLON        &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp EQUAL     &trans
-                           &trans         &trans  &kp SPACE                                                              &kp SPACE        &kp KP_N0  &kp KP_DOT
+&kp ESC  &kp F1   &kp F2   &kp F3         &kp F4  &kp F5                         &kp UP                &kp KP_SLASH     &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_MINUS  &kp BSPC
+&trans   &kp F6   &kp F7   &kp F8         &kp F9  &kp F10              &kp LEFT  &kp ENTER  &kp RIGHT  &kp KP_ASTERISK  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_PLUS   &kp KP_ENTER
+&trans   &kp F11  &kp F12  &kp C_AL_CALC  &none   &kp SEMI   &trans              &kp DOWN              &kp COLON        &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp EQUAL     &trans
+                           &trans         &trans  &kp SPACE                                            &kp SPACE        &kp KP_N0  &kp KP_DOT
             >;
         };
 

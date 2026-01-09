@@ -194,7 +194,7 @@ layers:
   - EP OFF
   - PRINTSCREEN
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - EP TOG
   - {type: held}
 combos:
 - p: [1, 2]
